@@ -123,6 +123,7 @@ C:\Users\shivam.mishra\Downloads\TaskManagementAPI\obj\Debug\net8.0\TaskManageme
 C:\Users\shivam.mishra\Downloads\TaskManagementAPI\obj\Debug\net8.0\TaskManagementAPI.csproj.CoreCompileInputs.cache
 C:\Users\shivam.mishra\Downloads\TaskManagementAPI\obj\Debug\net8.0\TaskManagementAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\shivam.mishra\Downloads\TaskManagementAPI\obj\Debug\net8.0\TaskManagementAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\shivam.mishra\Downloads\TaskManagementAPI\obj\Debug\net8.0\TaskManagementAPI.sourcelink.json
 C:\Users\shivam.mishra\Downloads\TaskManagementAPI\obj\Debug\net8.0\scopedcss\bundle\TaskManagementAPI.styles.css
 C:\Users\shivam.mishra\Downloads\TaskManagementAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\shivam.mishra\Downloads\TaskManagementAPI\obj\Debug\net8.0\staticwebassets.development.json

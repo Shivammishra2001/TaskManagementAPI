@@ -19,11 +19,10 @@ namespace TaskManagementAPI.Controllers
             _configuration = configuration;
         }
 
-        // Login endpoint - username/password check karke JWT token generate karega
+        // Login endpoint - username/password checking  and generate JWT token  
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginModel login)
         {
-            // NOTE: Real app me DB se verify karna hoga. Yeh sirf demo ke liye hardcoded.
             if (login.Username == "admin" && login.Password == "admin123")
             {
                 var token = GenerateJwtToken(login.Username);
@@ -47,7 +46,7 @@ namespace TaskManagementAPI.Controllers
             var claims = new[]
             {
                 new Claim(ClaimTypes.Name, username),
-                new Claim(ClaimTypes.Role, "Admin") // Example role, aap change kar sakte hain
+                new Claim(ClaimTypes.Role, "Admin") // Example role, changble
             };
 
             var token = new JwtSecurityToken(

@@ -8,7 +8,6 @@ namespace TaskManagementAPI.Controllers
 {
     [ApiController]
     [Route("tasks")]
-    [Authorize]
     public class TasksController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -18,7 +17,7 @@ namespace TaskManagementAPI.Controllers
             _context = context;
         }
 
-        // ✅ POST /tasks → Create a new task
+        //  POST /tasks → Create a new task
         [HttpPost]
         public async Task<IActionResult> CreateTask([FromBody] TaskCreateDto taskDto)
         {
@@ -39,7 +38,7 @@ namespace TaskManagementAPI.Controllers
         }
 
 
-        // ✅ GET /tasks/{id} → Get task by ID
+        //  GET /tasks/{id} → Get task by ID
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTaskById(int id)
         {
@@ -54,7 +53,7 @@ namespace TaskManagementAPI.Controllers
             return Ok(task);
         }
 
-        // ✅ GET /tasks/user/{userId} → Get tasks assigned to specific user
+        //  GET /tasks/user/{userId} → Get tasks assigned to specific user
         [HttpGet("user/{userId}")]
         public async Task<IActionResult> GetTasksByUser(int userId)
         {
